@@ -1,0 +1,33 @@
+#features{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+
+#features .reimaging {
+   position: absolute;
+   left: 188px;
+   top: 434px;
+}
+
+#features .close {
+   position: absolute;
+   left: 1161px;
+   top: 306px;
+}
+
+#features .features_bar {
+   position: absolute;
+   left: 0px;
+   top: 320px;
+}
+
+#features .left_arrow,
+#features .right_arrow {
+   z-index: 2;
+}
+
+#features .image-fader {
+	-webkit-transition: 500ms;
+	z-index: 2;
+}

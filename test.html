@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>TEST</title>
+    <link href="styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.web.min.js"></script>
+    <!--script src="js/kendo.fx.min.js"></script-->
+</head>
+<body>
+    <div id="chapters" class="tab2">
+                        <div class="chapter_bar ">
+                            <img src="images/chapters/chapter_bar.png">
+                        </div>
+                        <div class="left_arrow image-fader">
+                            <img src="images/chapters/left_arrow_i.png">
+                            <img src="images/chapters/left_arrow_a.png">
+                        </div>
+                        <div class="right_arrow image-fader">
+                            <img src="images/chapters/right_arrow_i.png">
+                            <img src="images/chapters/right_arrow_a.png">
+                        </div>
+                        <div class="close image-fader" onclick="ToggleDiv('close')">
+                            <img src="images/common/close_i.png">
+                            <img src="images/common/close_a.png">
+                        </div>
+                    </div>
+    <a id="slide-in-handle" href="#">TEST</a>
+    <script>
+        var slide = kendo.fx($("#chapters")).slideIn("up"),
+        //visible = true;
+
+        $("#slide-in-handle").click(function (e) {
+            //if (visible) {
+            //    slide.reverse();
+            //} else {
+                slide.play();
+            //}
+            //visible = !visible;
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

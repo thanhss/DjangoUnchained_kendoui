@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="hdtv-fullscreen" content="true" />
+    <meta name="hdtv-cursor-off" content="true" />
+    <title>iTunes Extras for Django Unchained</title>
+    <!-- Styles -->
+    <!--link rel="stylesheet" href="css/scrollbar-reset.css" type="text/css" media="screen"
+        charset="utf-8"-->
+    <link rel="stylesheet" href="css/shared.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/features.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/more.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/chapters.css" type="text/css" media="screen" charset="utf-8">
+    <!-- Controllers -->
+    <link href="styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.web.min.js"></script>
+    <script type="text/javascript" src="controllers/ctrl.js" charset="utf-8"></script>
+    
+</head>
+<body>
+    <div id="bleed">
+        <div id="navigation">
+            <div id="home">
+                <div class="bg_video">
+                    <video id="bg_video" src="images/home/bghome.mp4" autoplay loop></video>
+                </div>
+                <div class="mm_bar ">
+                    <img src="images/home/mm_bar.png">
+                </div>
+                <div class="play image-fader" onclick="ToggleDiv('close')">
+                    <img src="images/home/play_i.png">
+                    <img src="images/home/play_a.png">
+                    <img src="images/home/play_a.png">
+                </div>
+                <div class="chapters image-fader" id="test" onclick="ToggleDiv('chapters')">
+                    <img src="images/home/chapters_i.png">
+                    <img src="images/home/chapters_a.png">
+                    <img src="images/home/chapters_a.png">
+                </div>
+                <div class="features image-fader" onclick="ToggleDiv('features')">
+                    <img src="images/home/features_i.png">
+                    <img src="images/home/features_a.png">
+                    <img src="images/home/features_a.png">
+                </div>
+                <div class="more image-fader" onclick="ToggleDiv('more')">
+                    <img src="images/home/more_i.png">
+                    <img src="images/home/more_a.png">
+                    <img src="images/home/more_a.png">
+                </div>
+                <div class="tabs" style="height:720px;">
+                    <div id="play" class="tab1" style="display:none;">
+                    </div>
+                    <div id="chapters" class="tab2" style="display:none;">
+                        <div class="chapter_bar ">
+                            <img src="images/chapters/chapter_bar.png">
+                        </div>
+                        <div class="left_arrow image-fader" onclick="chapterClickLeft()">
+                            <img src="images/chapters/left_arrow_i.png">
+                            <img src="images/chapters/left_arrow_a.png">
+                        </div>
+                        <div class="right_arrow image-fader" onclick="chapterClickRight()">
+                            <img src="images/chapters/right_arrow_i.png">
+                            <img src="images/chapters/right_arrow_a.png">
+                        </div>
+                        <div class="close image-fader" onclick="ToggleDiv('close')">
+                            <img src="images/common/close_i.png">
+                            <img src="images/common/close_a.png">
+                        </div>
+                        <div class="sliding-view" >
+                            <img id="chapterImg" class='sliding-view-element' src='images/chapters/chapter_1.png' />
+                            
+                        </div>
+                    </div>
+                    <div id="features" class="tab3" style="display:none;">
+                        <div class="features_bar ">
+                            <img src="images/features/features_bar.png">
+                        </div>
+                        <div class="f1 reimaging image-fader">
+                            <img src="images/features/reimaging_i.png">
+                            <img src="images/features/reimaging_a.png">
+                        </div>
+                        <div class="close image-fader" onclick="ToggleDiv('close')">
+                            <img src="images/common/close_i.png">
+                            <img src="images/common/close_a.png">
+                        </div>
+                    </div>
+                    <div id="more" class="tab4" style="display:none;">
+                        <div class="more_background_bar ">
+                            <img src="images/more/more_bar.png">
+                        </div>
+                        <div class="close image-fader" onclick="ToggleDiv('close')">
+                            <img src="images/common/close_i.png">
+                            <img src="images/common/close_a.png">
+                        </div>
+                        <div class="sliding-view">
+                            <script type="text/javascript">
+                                for (var i = 1; i <= 7; i++)
+                                    document.write("<img class='sliding-view-child' src='images/more/link_0" + i + "_i.png' style='float:none;' />");
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

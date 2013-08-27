@@ -1,0 +1,122 @@
+#chapters {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+
+#chapters > .chapters_bar {
+   z-index: 0;
+}
+
+#chapters .left_arrow,
+#chapters .right_arrow {
+    -webkit-transition: 500ms;
+	z-index: 100;
+}
+
+/* Sliding View */
+
+#chapters .sliding-view {
+    position: absolute;
+    left: 486px;
+    top: 299px;
+    width: 309px;
+    height: 245px;
+    overflow: visible;
+    z-index: 0;
+}
+/*
+#chapters .sliding-view-element {
+    position: absolute;
+    width: 309px;
+    height: 245px;
+    -webkit-transition: 250ms;
+    cursor: pointer;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#chapters .sliding-view-element img {
+	position: absolute;
+    -webkit-transition: 250ms;
+	-webkit-transform: scale(0.4979592);
+	z-index: 0;
+	display: block;
+	margin: auto;
+	pointer-events: auto;
+}
+
+
+#chapters .sliding-view-element-focused img {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+#chapters .sliding-view-element div img:nth-child(1) {
+	position: absolute;
+}
+
+#chapters .sliding-view-element div img:nth-child(2) {
+	position: absolute;
+	left: 128px;
+    top: 64px;
+	opacity: 0;
+	-webkit-transition: 500ms;
+}
+
+#chapters .sliding-view-element-focused div:hover img:nth-child(2) {
+	opacity: 1;
+}
+
+#chapters .sliding-view-element-hidden {
+	display: none;
+
+}
+
+*/
+
+#chapters .inactive {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* dim the arrows when they're inactive on Apple TV */
+@media (-webkit-apple-tv) {
+	#chapters .inactive {
+		opacity: 1;
+	}
+
+	#chapters .sliding-view-element-focused.tk-highlighted div img:nth-child(2) {
+		opacity: 1;
+	}
+
+}#chapters .left_arrow {
+   position: absolute;
+   left: 63px;
+   top: 402px;
+}
+
+#chapters .right_arrow {
+   position: absolute;
+   left: 1190px;
+   top: 402px;
+}
+
+#chapters .close {
+   position: absolute;
+   left: 1161px;
+   top: 204px;
+}
+
+#chapters .chapter {
+   position: absolute;
+   left: 486px;
+   top: 299px;
+}
+
+#chapters .chapter_bar {
+   position: absolute;
+   left: 0px;
+   top: 268px;
+}
+

@@ -1,0 +1,65 @@
+#home{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+}
+
+#home .play {
+   position: absolute;
+   left: 144px;
+   top: 623px;
+}
+
+#home .chapters {
+   position: absolute;
+   left: 338px;
+   top: 622px;
+}
+
+#home .features {
+   position: absolute;
+   left: 670px;
+   top: 623px;
+}
+
+#home .more {
+   position: absolute;
+   left: 999px;
+   top: 622px;
+}
+
+#home .mm_bar {
+   position: absolute;
+   left: 0px;
+   top: 566px;
+}
+
+#home > .image-fader {
+   z-index: 4;
+}
+
+/*bg.png*/
+#home > .mm_bar {
+   z-index: 1;
+}
+
+#home >.bg_video {
+	z-index: 0;
+}
+
+#home > .tk-tab-contents {
+	z-index: 3;
+}
+
+#bg_video {
+	display: block;
+}
+
+@media (-webkit-apple-tv) {
+	#bg_video {
+		display: none;
+	}
+	#home {
+		background-image: url(../images/home/bg_home.jpg);
+	}
+}
